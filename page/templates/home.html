@@ -1,4 +1,9 @@
 {% extends 'wrapper.html' %}
 {% block content %}
-<h1>Chérie coco cococo coco cococo - Didi B</h1>
+<h1>Messages Board - Didi B</h1>
+<ul>
+    {% for post in all_post_list %}
+        <li> {{ post.text }} </li>
+    {% endfor %}
+</ul>
 {% endblock %}
