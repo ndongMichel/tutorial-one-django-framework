@@ -1,9 +1,13 @@
 {% extends 'wrapper.html' %}
 {% block content %}
 <h1>Messages Board - Didi B</h1>
-<ul>
-    {% for post in all_post_list %}
-        <li> {{ post.text }} </li>
-    {% endfor %}
-</ul>
+<hr>
+{% for post in all_post_list %}
+<div class="post-entry">
+    <h2><a href=""> {{ post.title }} </a></h2>
+    <p>
+        {{ post.text }}
+    </p>
+</div>
+{% endfor %}
 {% endblock %}

@@ -16,6 +16,7 @@ class HomePageViewTest(TestCase):
     
     def test_view_uses_correct_template(self):
         response = self.client.get(reverse('home'))
+        
 
 
 class PostModelTest(TestCase):
